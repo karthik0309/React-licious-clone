@@ -4,6 +4,7 @@
     align-items: center;
     height: calc(100vh - calc(10vh + 60px));
     position: relative;
+    overflow: hidden;
 }
 .left__arrow{
     position: absolute;

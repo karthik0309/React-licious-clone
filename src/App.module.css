@@ -6,3 +6,9 @@
 .main__container{
     overflow: hidden;
 }
+@media(max-width:600px){
+    .main__container{
+        overflow: hidden;
+        height: fit-content;
+    }
+}
