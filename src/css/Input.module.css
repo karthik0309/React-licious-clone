@@ -1,0 +1,51 @@
+.main__container{
+    width: 25vw;
+    height: 40px;
+    min-width: 250px;
+    position: relative;
+    margin: 5%;
+}
+.text__input{
+    height: 80%;
+    width: 80%;
+    border: none;
+    font-size: 20px;
+    outline: none;
+    border-bottom: 2px solid silver;
+}
+.label{
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    font-size: 20px;
+    color: darkgray;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+.line{
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    bottom: 8px;
+}
+.line:before{
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    background: rgb(233,52,71);
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.text__input:focus+.label,
+.text__input:valid+.label{
+    transform: translateY(-25px);
+    color: rgb(233,52,71);
+    font-size: 18px;
+}
+
+.text__input:focus~.line:before,
+.text__input:valid~.line:before{
+    transform: scaleX(1);
+}

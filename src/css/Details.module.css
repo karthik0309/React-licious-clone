@@ -1,0 +1,35 @@
+.main__container{
+    margin-top: 6vh;
+}
+.title{
+    text-align: center;
+    color: gray;
+    margin-bottom: 15px;
+}
+.span{
+    color: rgb(233,52,71);
+    margin-left: 15px;
+}
+.description{
+    width: 70%;
+    margin-left: 15%;
+    color: gray;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 15px;
+}
+.bottom{
+    text-align: center;
+    color: gray;
+    font-size: 50px;
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+@media(max-width:600px){
+    .bottom,.title{
+        font-size: large;
+    }
+    .bottom{
+        margin-top: 10vh;
+    }
+}

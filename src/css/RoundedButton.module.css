@@ -1,0 +1,15 @@
+.button__rounded{
+    width: 80px;
+    height: 35px;
+    border-radius: 17.5px;
+    border: 1px solid silver;
+    outline: none;
+    background: white;
+    cursor: pointer;
+    font-size: large;
+}
+.button__rounded:hover{
+    background-color: rgb(233,52,71);
+    border: none;
+    color: white;
+}

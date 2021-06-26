@@ -1,0 +1,85 @@
+.main__container{
+    height: 100vh;
+    width: 30vw;
+    min-width: 250px;
+    background-image: url(https://www.licious.in/img/user-login.png);
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    overflow: hidden;
+    transition: transform 0.5s ease-out;
+    z-index: 10;
+}
+.header{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    padding: 12px;
+    justify-content: space-around;
+}
+.logo{
+    font-family: 'Cedarville Cursive', cursive;
+}
+.cross{
+    transform: rotate(45deg);
+    cursor: pointer;
+    font-size: 24px;
+    font-weight: bolder;
+}
+.cross:hover{
+    opacity: 0.7;
+}
+
+.login__container{
+    width: 90%;
+    height: 60vh;
+    background: white;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: black;
+    padding: 12px;
+}
+.title{
+    margin-left: 4%;
+}
+.error{
+    color: rgb(233,52,71);
+    margin-left: 4%;
+    font-weight: bolder;
+    font-size: larger;
+    margin-top: 4%;
+}
+.success{
+    color: lime;
+    margin-left: 4%;
+    font-weight: bolder;
+    font-size: larger;
+    margin-top: 4%;
+}
+
+.close{
+    transform: translateX(100%);
+}
+.show{
+    transform: translateX(0%);
+}
+
+@media(max-width:600px){
+    .main__container{
+        width: 70vw;
+    }
+}
+@media(max-width:400px){
+    .main__container{
+        width: 100vw;
+    }
+}

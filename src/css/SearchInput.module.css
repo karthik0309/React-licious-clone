@@ -1,0 +1,31 @@
+.main__container{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.input{
+    width: 60%;
+    height: 50%;
+    outline: none;
+    border: none;
+    font-size: larger;
+    padding-left: 12px;
+    color: black;
+    background: #efefef;
+}
+.button{
+    width: 20%;
+    height: 50%;
+    outline: none;
+    border: none;
+    background: rgb(233,52,71);
+    color: white;
+    font-size: larger;
+    font-weight: bolder;
+    cursor: pointer;
+}
+.button:hover{
+    background-color: rgba(233,52,71,0.8);
+}

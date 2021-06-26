@@ -1,0 +1,55 @@
+.main__container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - calc(10vh + 60px));
+    position: relative;
+}
+.left__arrow{
+    position: absolute;
+    left: 0;
+    margin-left: 2%;
+    cursor: pointer;
+    color: white;
+    transform: scale(2);
+    top: 50%;
+    font-size: larger;
+    z-index: 10;
+}
+.right__arrow{
+    position: absolute;
+    right: 0;
+    margin-right: 2%;
+    font-size: larger;
+    cursor: pointer;
+    color: white;
+    transform: scale(2);
+    top: 50%;
+    z-index: 10;
+}
+.right__arrow:hover,.left__arrow:hover{
+    color: rgb(233,52,71);
+    transform: scale(2.8);
+}
+.curr__slide{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+    transition-duration: 1s ease;
+}
+.active{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    opacity: 1;
+    transition-duration: 1s;
+}
+.image{
+    background-repeat: no-repeat;
+    object-fit: cover;
+    width: 100vw;
+    height: calc(100vh - calc(10vh + 60px));
+}
