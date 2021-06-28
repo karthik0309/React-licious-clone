@@ -6,6 +6,8 @@ import {SearchTags} from '../../constants/constant'
 import PopularItems from '../../json/AboutUs.json'
 import classes from '../../css/SearchBar.module.css'
 import axios from 'axios'
+import {API_URL} from '../../constants/constant'
+require("dotenv").config()
 
 const SearchBar = () => {
 
@@ -18,10 +20,10 @@ const SearchBar = () => {
     }
 
     const sendRequest=(param)=>{
-        axios.get("https://api.unsplash.com/search/photos",{
+        axios.get(API_URL,{
             params:{query:param},
             headers:{
-                Authorization:'Client-ID Fx3dFv-_0ZYSDjJsgXSqOMZI6kLxk_1A74ZWeBtWD4A'
+                Authorization:`Client-ID ${process.env.REACT_APP_API_KEY}`
             }
         }).then(res=>{
             setImages(res.data.results)
